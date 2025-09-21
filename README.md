@@ -51,6 +51,9 @@ The goal of this project is to demonstrate skills with GA4, Google Tag Manager (
 4. Open the browser and go to:
 http://localhost:8000/index.html
 
+Video Link :
+https://drive.google.com/file/d/1iGKpSy0ymWGloJBM8N8VQlxrRt1GEAfN/view?usp=drive_link 
+
 
 # Follow-Up Questions
 1. How did you prevent duplicate scroll depth events?
