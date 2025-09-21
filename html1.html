@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataSlush Assessment</title>
+    
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KCK84XM2');</script>
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        
+        nav {
+            background: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            height: 62px;
+        }
+
+        nav .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        nav a:hover {
+            background: #555;
+        }
+        
+        
+        main {
+            margin-top: 62px;
+        }
+        
+        section {
+            min-height: 100vh;
+            padding: 6rem 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        section:nth-child(odd) {
+            background: #ffffff;
+        }
+        
+        section:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        h1, h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        
+        h2 {
+            font-size: 2rem;
+            border-bottom: 3px solid #007acc;
+            padding-bottom: 0.5rem;
+        }
+        
+        p {
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .content-block {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border: 1px solid #e1e5e9;
+        }
+        
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 1rem;
+                gap: 1rem;
+            }
+            
+            nav .logo {
+                font-size: 1.3rem;
+                text-align: center;
+            }
+            
+            nav ul {
+                justify-content: center;
+                gap: 1rem;
+                flex-wrap: wrap;
+            }
+            
+            nav a {
+                padding: 0.4rem 0.8rem;
+                font-size: 0.9rem;
+            }
+            
+            main {
+                margin-top: 120px; 
+            }
+            
+            section {
+                padding: 3rem 1rem;
+                min-height: auto;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            h2 {
+                font-size: 1.6rem;
+            }
+            
+            p {
+                font-size: 1rem;
+            }
+            
+            .content-block {
+                margin: 1.5rem 0;
+                padding: 1.2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            nav {
+                padding: 0.8rem;
+            }
+            
+            nav .logo {
+                font-size: 1.2rem;
+            }
+            
+            nav ul {
+                gap: 0.5rem;
+            }
+            
+            nav a {
+                padding: 0.3rem 0.6rem;
+                font-size: 0.8rem;
+            }
+            
+            main {
+                margin-top: 110px;
+            }
+            
+            section {
+                padding: 2rem 0.8rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+            
+            .content-block {
+                margin: 1rem 0;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCK84XM2"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   
+
+   
+    <nav>
+        <a href="#home" class="logo">DataSlush Assessment</a>
+        <ul>
+            <li><a href="#home" data-section="Home">Home</a></li>
+            <li><a href="#about" data-section="About">About</a></li>
+            <li><a href="#services" data-section="Services">Services</a></li>
+            <li><a href="#contact" data-section="Contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <section id="home" data-section-name="Home">
+            <h1>Welcome to DataSlush Assessment</h1>
+            <div class="content-block">
+                <p>This is the home section of our assessment webpage. This page is designed to test navigation tracking and scroll depth measurement.</p>
+                <p>The purpose of this assessment is to demonstrate how we can track user interactions and engagement on a webpage using Google Analytics 4, Google Tag Manager, and JavaScript.</p>
+                <p>As you navigate through this page and scroll down, various events will be tracked and sent to Google Analytics for analysis.</p>
+            </div>
+            <div class="content-block">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+
+        <section id="about" data-section-name="About">
+            <h2>About Us</h2>
+            <div class="content-block">
+                <p>This about section contains information about the company and the assessment. We're testing how users interact with different sections of the webpage.</p>
+                <p>The tracking implementation will capture when users click on navigation items and how far they scroll through the content.</p>
+                <p>This data is valuable for understanding user behavior and optimizing the user experience.</p>
+            </div>
+            <div class="content-block">
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+
+        <section id="services" data-section-name="Services">
+            <h2>Our Services</h2>
+            <div class="content-block">
+                <p>This services section showcases what we offer. The scroll tracking will measure how engaged users are with our content.</p>
+                <p>We provide analytics implementation, data tracking, and user behavior analysis services.</p>
+                <p>Each scroll milestone (25%, 50%, 75%, 100%) will be tracked as users progress through the page.</p>
+            </div>
+            <div class="content-block">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+        </section>
+
+        <section id="contact" data-section-name="Contact">
+            <h2>Contact Us</h2>
+            <div class="content-block">
+                <p>This is the final section of our assessment page. By the time users reach here, they will have triggered multiple scroll depth events.</p>
+                <p>The contact section represents the bottom of our page content and completion of the user journey.</p>
+                <p>All navigation clicks and scroll milestones are being tracked and will appear in Google Analytics reports.</p>
+            </div>
+            <div class="content-block">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            <div class="content-block">
+                <p>Thank you for completing the DataSlush assessment page. This concludes our tracking demonstration.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="tracking.js"></script>
+</body>
+</html>

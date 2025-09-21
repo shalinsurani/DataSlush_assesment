@@ -1,0 +1,322 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2025-09-20 18:10:38",
+    "containerVersion": {
+        "path": "accounts/6313680090/containers/230345927/versions/3",
+        "accountId": "6313680090",
+        "containerId": "230345927",
+        "containerVersionId": "3",
+        "name": "DataSlush Assessment - Final Version",
+        "description": "Complete tracking setup with GA4 configuration, navigation click tracking, scroll depth measurement, and event parameters for DataSlush assessment submission.",
+        "container": {
+            "path": "accounts/6313680090/containers/230345927",
+            "accountId": "6313680090",
+            "containerId": "230345927",
+            "name": "Assessment Website",
+            "publicId": "GTM-KCK84XM2",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1758305636137",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6313680090/containers/230345927/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-KCK84XM2"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "tagId": "3",
+                "name": "GA4 Configuration",
+                "type": "googtag",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "tagId",
+                        "value": "G-W7FZ7NF2Y6"
+                    }
+                ],
+                "fingerprint": "1758317006221",
+                "firingTriggerId": [
+                    "2147479573"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "tagId": "8",
+                "name": "GA4 - Navigation Click",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "section_name"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - section_name}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "nav_click"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-W7FZ7NF2Y6"
+                    }
+                ],
+                "fingerprint": "1758317042388",
+                "firingTriggerId": [
+                    "6"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            },
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "tagId": "9",
+                "name": "GA4 - Scroll Depth",
+                "type": "gaawe",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "sendEcommerceData",
+                        "value": "false"
+                    },
+                    {
+                        "type": "LIST",
+                        "key": "eventSettingsTable",
+                        "list": [
+                            {
+                                "type": "MAP",
+                                "map": [
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameter",
+                                        "value": "scroll_percent"
+                                    },
+                                    {
+                                        "type": "TEMPLATE",
+                                        "key": "parameterValue",
+                                        "value": "{{DLV - scroll_percent}}"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "eventName",
+                        "value": "scroll_depth"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "measurementIdOverride",
+                        "value": "G-W7FZ7NF2Y6"
+                    }
+                ],
+                "fingerprint": "1758317026295",
+                "firingTriggerId": [
+                    "7"
+                ],
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "trigger": [
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "triggerId": "6",
+                "name": "Navigation Click",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "nav_click"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1758310636419"
+            },
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "triggerId": "7",
+                "name": "Scroll Depth",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "scroll_depth"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1758310669177"
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "variableId": "4",
+                "name": "DLV - section_name",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "section_name"
+                    }
+                ],
+                "fingerprint": "1758309395985",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "variableId": "5",
+                "name": "DLV - scroll_percent",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "scroll_percent"
+                    }
+                ],
+                "fingerprint": "1758309722762",
+                "formatValue": {}
+            }
+        ],
+        "builtInVariable": [
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "type": "PAGE_URL",
+                "name": "Page URL"
+            },
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "type": "PAGE_HOSTNAME",
+                "name": "Page Hostname"
+            },
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "type": "PAGE_PATH",
+                "name": "Page Path"
+            },
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "type": "REFERRER",
+                "name": "Referrer"
+            },
+            {
+                "accountId": "6313680090",
+                "containerId": "230345927",
+                "type": "EVENT",
+                "name": "Event"
+            }
+        ],
+        "fingerprint": "1758388274334",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6313680090/containers/230345927/versions/3?apiLink=version"
+    }
+}
