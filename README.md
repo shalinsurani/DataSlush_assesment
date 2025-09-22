@@ -35,12 +35,17 @@ The goal of this project is to demonstrate skills with GA4, Google Tag Manager (
 
 
 # Files in this Repo
-- index.html : Basic webpage with navigation and long content.  
+- html1.html : Basic webpage with navigation and long content.  
 - tracking.js : JavaScript file handling nav click & scroll depth tracking.  
 - gtm-container-export.json : Export of GTM setup (tags, triggers, variables).  
-- lookerstudio-link.txt : Shareable link to the Looker Studio dashboard.  
-   link - https://lookerstudio.google.com/reporting/7f7138bb-5ff7-4c0a-98c4-493e10bf2949
-- README.md : This documentation file.  
+- README.md : This documentation file.
+- Video Link in a .txt File
+- GA4 setup notes (PDF)
+- Screenshots
+  
+- lookerstudio-link
+https://lookerstudio.google.com/reporting/7f7138bb-5ff7-4c0a-98c4-493e10bf2949
+
 
 
 # How to Run Locally
