@@ -49,7 +49,7 @@ The goal of this project is to demonstrate skills with GA4, Google Tag Manager (
 3. Run a simple local server (to mimic a website):
    python -m http.server 8000
 4. Open the browser and go to:
-http://localhost:8000/index.html
+http://localhost:8000/html1.html
 
 Video Link :
 https://drive.google.com/file/d/1iGKpSy0ymWGloJBM8N8VQlxrRt1GEAfN/view?usp=drive_link 
